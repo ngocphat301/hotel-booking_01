@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><%= t ".hotel" %></a>
+              <%= link_to t(".hotel"), Settings.hotels.hotel, class:"nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to t(".about"), Settings.layouts.header.about, class:"nav-link" %>

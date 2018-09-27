@@ -6,11 +6,9 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact", as: :contact
   get "/signup", to: "users#new"
   get "/login", to: "sessions#new"
+  get "/hotel", to: "hotels#index"
+  get "/hotel/:id/order", to: "hotels#order", as: :order_hotel
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-  resources :users
-  resources :hotels, only: %i(index show)
-  namespace :admin do
-    resources :hotels
-  end
+  resources :users 
 end
