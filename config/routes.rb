@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/signup", to: "users#new"
   get "/login", to: "sessions#new"
   get "/hotel", to: "hotels#index"
+  get "/hotel/:id/room", to: "hotels#room", as: :room_hotel
   get "/hotel/:id/order", to: "hotels#order", as: :order_hotel
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"

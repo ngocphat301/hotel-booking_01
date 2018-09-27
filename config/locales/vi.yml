@@ -1,4 +1,4 @@
-en:
+vi:
   helpers:
     application_helper:
       text: "Book Hotel"
@@ -14,22 +14,22 @@ en:
         toggle_navigation: "Toggle navigation"
         hotel: "Hotel"
     header:
-      hotel: "Hotel"
-      about: "News"
-      help: "Help"
-      contact: "Contact"
-      login: "Login"
-      sign_up: "Sign Up"
-      head_acount: "Acount"
-      head_profile: "Info"
-      head_setting: "Edit"
-      head_logout: "Logout"
+      hotel: "Khách sạn"
+      about: "Tin tức"
+      help: "Hỗ trợ"
+      contact: "liên hệ"
+      login: "Đăng nhập"
+      sign_up: "Đăng kí"
+      head_acount: "Tài khoản"
+      head_profile: "Thông tin cá nhân"
+      head_setting: "Chỉnh sửa"
+      head_logout: "Đăng xuất"
     footer:
-      text: Comeback Booking Hotel"
-      book: "Booking guide"
-      contact_us: "Contact Us"
-      help: "Help"
-      recruitment: Recruitment
+      text: "Về Booking Hotel"
+      book: "Cách đặt phòng"
+      contact_us: "Liên hệ với chúng tôi"
+      help: "Trợ giúp"
+      recruitment: Tuyển dụng
       contact: "Liên hệ"
       company: "Công ty TNHH Framgia Việt Nam"
       address_company: "Văn phòng: Tầng 9, Tòa nhà Nissan, 433 Trần Khát Chân, Hai Bà Trưng, Hà Nội"
@@ -132,6 +132,8 @@ en:
       last-name: "Tên"
       phone: "Số Điện thoại"
       email: "Email"
+      comfirm-email: "(*) Thông tin đặt phòng sẽ được gửi về email!"
+      update-price: "Cập Nhập"
   controllers:
     users_controller:
       create_success: "Đăng kí thành công"

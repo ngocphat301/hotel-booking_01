@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="row">
+    <div class="name-hotel">
+
+      <h3>Khách sạn Daewoo Hanoi</h3>
+      360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội
+    </div>
+  </div>
+  <div class="row img-hotel">
+    <div class="col-md-6">
+      <%= image_tag "img-6.jpg" %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag "img-3.jpg" %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag "img3.1.jpg" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <%= image_tag "img5.jpg" %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag "img5.jpg" %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag "img6.jpg" %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag "img6.jpg" %>
+    </div>
+  </div>
+  <div class="row service">
+    <div class="col-md-2">
+      <p>Dịch vụ kèm theo : </p>
+    </div>
+    <div class="col-md-10">
+      <%= image_tag "wifi.png" %> Wifi
+      <%= image_tag "p.png" %> Bãi Đỗ Xe
+      <%= image_tag "restaurant.png" %> Nhà Hàng
+    </div>
+  </div>
+  <div class="room-type">
+    <div class="row">
+      <%= image_tag "s-bed.jpg", class: "col-md-2" %>
+      <div class="col-md-9">
+        <h3>Single Bed</h3>
+        <p>
+          1 Giường (180 x 200) Diện tích : 24m2 Điều hòa
+        </p>
+        <div class="row">
+          <div class="col-md-3">
+            <%= image_tag "avatar.png" %>
+            <p>
+              <%= t".tow-people" %>
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <%= t ".price-order-sig" %>
+          </div>
+          <div class="col-md-3">
+            <%= submit_tag t(".button-order"), class: "form_submit" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="room-type">
+    <div class="row">
+      <%= image_tag "img6.jpg", class: "col-md-2" %>
+      <div class="col-md-9">
+        <h3><%= link_to "Double Bed", order_hotel_path(1) %></h3>
+        <p>
+          2 Giường (120 x 190) Diện tích : 30m2 Điều hòa
+        </p>
+        <div class="row">
+          <div class="col-md-3">
+            <%= image_tag "avatar.png" %>
+            <p>
+              <%= t".four-people" %>
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <%= t ".price-order-dou" %>
+          </div>
+          <div class="col-md-3">
+            <%= submit_tag t(".button-order"), class: "form_submit" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

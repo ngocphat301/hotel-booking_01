@@ -1,67 +1,58 @@
 <div class="container">
   <div class="row">
-    <div class="name-hotel">
-
-      <h3>Khách sạn Daewoo Hanoi</h3>
-      360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội
-    </div>
-  </div>
-  <div class="row img-hotel">
-    <div class="col-md-6">
-      <%= image_tag "img-6.jpg" %>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "img-3.jpg" %>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "img3.1.jpg" %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <%= image_tag "img5.jpg" %>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "img5.jpg" %>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "img6.jpg" %>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "img6.jpg" %>
-    </div>
-  </div>
-  <div class="row service">
-    <div class="col-md-3">
-      <p>Dịch vụ kèm theo : </p>
-    </div>
+    <%= image_tag "img6.jpg", class: "col-md-2" %>
     <div class="col-md-9">
-      <%= image_tag "wifi.png" %> Wifi
-      <%= image_tag "p.png" %> Bãi Đỗ Xe
-      <%= image_tag "restaurant.png" %> Nhà Hàng
+      <h3>Ten Khách san</h3>
+      <p>
+        360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội
+      </p>
     </div>
-  </div>
-  <div class="room-type">
-    <div class="row single-bed">
-      <%= image_tag "s-bed.jpg", class: "col-md-2" %>
-      <div class="col-md-9">
-        <h3>Single Bed</h3>
+
+    <%= form_tag hotel_path, method: :get do  %>
+    <div class="input-group">
+      <p class="form-text">
+      </p>
+      <div class="col-md-3">
+        <%= text_field_tag "pay", nil, placeholder: "ngày nhận" %>
+      </div>
+      <div class="col-md-3">
+        <%= text_field_tag "received", nil, placeholder: "ngày trả" %>
+      </div>
+      <div class="col-md-3">
+        <%= text_field_tag "number", nil, placeholder: "số phòng đăt" %>
+      </div>
+      <div class="col-md-3">
+          <%= submit_tag t(".update-price"), class: "btn btn-primary" %>
+        </div>
+      <div class="col-md-3">
+        <%= text_field_tag "nick-name", nil, placeholder: t(".nick-name") %>
+      </div>
+      <div class="col-md-4">
+        <%= text_field_tag "first-name", nil, placeholder: t(".first-name") %>
+      </div>
+      <div class="col-md-4">
+        <%= text_field_tag "last-name", nil, placeholder: t(".last-name") %>
+      </div>
+
+
+      <div class="col-md-8">
+        <%= text_field_tag "phone", nil, placeholde: t(".phone") %>
+      </div>
+      <div class="col-md-8">
+        <%= text_field_tag "email", nil, placeholder: t(".email") %>
+      </div>
+      <div class="col-md-4">
         <p>
-          1 Giường (180 x 200)
-          Diện tích : 24m2
-          Điều hòa
+          <%= t".comfirm-email" %>
         </p>
       </div>
+      <div class="col-md-12">
+        <%= text_area(:area, nil,col: 12, rows: 4) %>
+      </div>
+      <div class="col-md-4 offset-md-4">
+          <%= submit_tag "Oke", class: "btn btn-primary" %>
+        </div>
     </div>
-  </div>
-  <div class="single-bed-detail">
-    <div class="col-md-3">
-      <%= image_tag "avatar.png" %> x 2
-    </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-  </div>
-  <div class="double-bed">
+    <% end %>
   </div>
 </div>
